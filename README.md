@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Novi — Landing Page (Frontend & Design Assessment)
 
-## Getting Started
+A responsive marketing landing page for **Novi**, a project and task management tool built for small, fast-moving teams. This project was built as part of the Veel frontend/design hiring assessment.
 
-First, run the development server:
+**Live Preview:** https://novi-tan.vercel.app/
+**Repository:** https://github.com/P-Shrey10/novi_veel
+
+---
+
+## ✨ Overview
+
+Novi's landing page introduces the product with a calm, modern visual identity and communicates its core value prop — bringing tasks, docs, and conversations into one workspace — through a hero section, feature highlights, product perspectives, social proof, and a conversion-focused footer.
+
+### Sections included
+- **Navigation** — logo, primary links (Product, Features, Manifesto, Pricing), Sign In / Get Started actions, with a collapsible menu on smaller screens
+- **Hero** — headline, supporting copy, dual CTAs ("Start free 14-day trial" / "Watch 2-min interactive tour"), trust signals, and a hero product visual
+- **Feature Section** — four feature cards (Boards, Threads, Timeline, Integrations) with icons and short descriptions
+- **Product Perspectives** — a secondary section highlighting different views of the product (Async Inbox, Daily Velocity, Sprint Planning, Core Brain)
+- **Social Proof** — stats band (faster delivery, zero silos, team visibility) and testimonials from sample teams
+- **Final CTA** — reinforced signup prompt before the footer
+- **Footer** — brand tagline, link groups (Product, Company, Resources, Legal), email signup, social links, and bottom copyright/legal row
+
+---
+
+## 🛠 Tech Stack
+
+- **Framework:** Next.js (React)
+- **Styling:** Tailwind CSS
+- **Deployment:** Vercel
+- **Images/Assets:** Next.js Image optimization (`next/image`)
+
+> Update this section if your actual stack differs (e.g. if you used plain CSS, Framer Motion, GSAP, etc.) — list every major library you used so reviewers know what to expect in the code.
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18+ and npm (or yarn/pnpm)
+
+### Installation & Local Development
 
 ```bash
+git clone https://github.com/P-Shrey10/novi_veel.git
+cd novi_veel
+
+npm install
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Build for Production
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+npm run start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
