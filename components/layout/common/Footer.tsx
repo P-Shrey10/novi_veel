@@ -72,8 +72,8 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="w-full border-t border-border/40 bg-background px-4 py-8 md:px-6 lg:px-8">
-      <div className="mx-auto max-w-7xl">
+    <footer className="w-full border-t border-border/40 bg-background">
+      <div className="container mx-auto px-4 py-8 md:px-6">
         <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
           <div className="col-span-2 sm:col-span-3 md:col-span-1 lg:col-span-2">
             <div className="flex flex-col space-y-4">
