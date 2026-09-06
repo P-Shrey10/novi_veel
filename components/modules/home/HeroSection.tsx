@@ -4,6 +4,7 @@ import {
   Play,
   ArrowRight,
 } from 'lucide-react';
+import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import heroSectionImage from '@/components/assets/image/hero_section_image.png';
@@ -39,22 +40,26 @@ const HeroSection: React.FC = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-6 sm:mt-8">
-          <Button
-            size="lg"
-            className="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 text-white px-5 sm:px-6 py-4 sm:py-5 text-sm shadow-lg shadow-indigo-600/20 transition-all duration-300"
-          >
-            Start free 14-day trial <ArrowRight className="w-4 h-4 ml-1" />
-          </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="w-full sm:w-auto border-slate-300 hover:border-indigo-300 hover:bg-indigo-50/50 px-5 sm:px-6 py-4 sm:py-5 text-sm transition-all duration-300"
-          >
-            <span className="flex items-center justify-center w-5 h-5 mr-2">
-              <Play className="w-2.5 h-2.5 fill-current" />
-            </span>
-            Watch 2-min interactive tour
-          </Button>
+          <Link href="/register" className="w-full sm:w-auto">
+            <Button
+              size="lg"
+              className="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 text-white px-5 sm:px-6 py-4 sm:py-5 text-sm shadow-lg shadow-indigo-600/20 transition-all duration-300"
+            >
+              Start free 14-day trial <ArrowRight className="w-4 h-4 ml-1" />
+            </Button>
+          </Link>
+          <Link href="#features" className="w-full sm:w-auto">
+            <Button
+              size="lg"
+              variant="outline"
+              className="w-full sm:w-auto border-slate-300 hover:border-indigo-300 hover:bg-indigo-50/50 px-5 sm:px-6 py-4 sm:py-5 text-sm transition-all duration-300"
+            >
+              <span className="flex items-center justify-center w-5 h-5 mr-2">
+                <Play className="w-2.5 h-2.5 fill-current" />
+              </span>
+              Watch 2-min interactive tour
+            </Button>
+          </Link>
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-x-4 sm:gap-x-6 gap-y-2 mt-4 sm:mt-6 text-xs sm:text-sm text-slate-500">

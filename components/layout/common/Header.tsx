@@ -52,14 +52,16 @@ const Header: React.FC = () => {
 
           <div className="hidden md:flex items-center gap-3">
             <Link
-              href="#"
+              href="/login"
               className="text-base font-medium text-gray-700 transition-colors hover:text-gray-900"
             >
               Sign In
             </Link>
-            <Button className="bg-gray-900 text-white hover:bg-gray-800 rounded-full px-5 py-2 text-base font-medium transition-colors">
-              Get Started
-            </Button>
+            <Link href="/register">
+              <Button className="bg-gray-900 text-white hover:bg-gray-800 rounded-full px-5 py-2 text-base font-medium transition-colors">
+                Get Started
+              </Button>
+            </Link>
           </div>
 
           <button
@@ -108,18 +110,17 @@ const Header: React.FC = () => {
 
             <div className="border-t border-gray-200 my-2 pt-4">
               <Link
-                href="#"
+                href="/login"
                 className="block px-4 py-3 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors"
                 onClick={closeMenu}
               >
                 Sign In
               </Link>
-              <Button
-                className="w-full mt-2 bg-gray-900 text-white hover:bg-gray-800 rounded-full px-5 py-2 text-base font-medium transition-colors"
-                onClick={closeMenu}
-              >
-                Get Started
-              </Button>
+              <Link href="/register" onClick={closeMenu} className="block mt-2">
+                <Button className="w-full bg-gray-900 text-white hover:bg-gray-800 rounded-full px-5 py-2 text-base font-medium transition-colors">
+                  Get Started
+                </Button>
+              </Link>
             </div>
           </nav>
         </div>
